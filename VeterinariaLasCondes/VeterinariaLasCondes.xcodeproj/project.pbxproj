@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2B773372987040900B12C4C /* VeterinariaLasCondesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B773362987040900B12C4C /* VeterinariaLasCondesApp.swift */; };
+		C2B7733B2987040900B12C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B7733A2987040900B12C4C /* Assets.xcassets */; };
+		C2B7733E2987040900B12C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B7733D2987040900B12C4C /* Preview Assets.xcassets */; };
+		C2B773482987040900B12C4C /* VeterinariaLasCondesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B773472987040900B12C4C /* VeterinariaLasCondesTests.swift */; };
+		C2B773522987040900B12C4C /* VeterinariaLasCondesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B773512987040900B12C4C /* VeterinariaLasCondesUITests.swift */; };
+		C2B773542987040900B12C4C /* VeterinariaLasCondesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B773532987040900B12C4C /* VeterinariaLasCondesUITestsLaunchTests.swift */; };
+		C2B773622987059900B12C4C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B773612987059900B12C4C /* Login.swift */; };
+		C2B77364298714C100B12C4C /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B77363298714C100B12C4C /* Perfil.swift */; };
+		C2CE6BE52A2680D400A28796 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CE6BE42A2680D400A28796 /* APIResponse.swift */; };
+		C2CE6BE72A26811C00A28796 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CE6BE62A26811C00A28796 /* APIService.swift */; };
+		C2CE6BE92A26818F00A28796 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CE6BE82A26818F00A28796 /* LoginViewModel.swift */; };
+		C2CE6BF22A2688EA00A28796 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CE6BF12A2688EA00A28796 /* ViewModelState.swift */; };
+		C2CE6BF42A269B1500A28796 /* AuthException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CE6BF32A269B1500A28796 /* AuthException.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2B773442987040900B12C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B7732B2987040900B12C4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B773322987040900B12C4C;
+			remoteInfo = VeterinariaLasCondes;
+		};
+		C2B7734E2987040900B12C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B7732B2987040900B12C4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B773322987040900B12C4C;
+			remoteInfo = VeterinariaLasCondes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2B773332987040900B12C4C /* VeterinariaLasCondes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeterinariaLasCondes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B773362987040900B12C4C /* VeterinariaLasCondesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinariaLasCondesApp.swift; sourceTree = "<group>"; };
+		C2B7733A2987040900B12C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B7733D2987040900B12C4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2B773432987040900B12C4C /* VeterinariaLasCondesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeterinariaLasCondesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B773472987040900B12C4C /* VeterinariaLasCondesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinariaLasCondesTests.swift; sourceTree = "<group>"; };
+		C2B7734D2987040900B12C4C /* VeterinariaLasCondesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeterinariaLasCondesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B773512987040900B12C4C /* VeterinariaLasCondesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinariaLasCondesUITests.swift; sourceTree = "<group>"; };
+		C2B773532987040900B12C4C /* VeterinariaLasCondesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinariaLasCondesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2B773612987059900B12C4C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C2B77363298714C100B12C4C /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		C2CE6BE42A2680D400A28796 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		C2CE6BE62A26811C00A28796 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C2CE6BE82A26818F00A28796 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C2CE6BF12A2688EA00A28796 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		C2CE6BF32A269B1500A28796 /* AuthException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthException.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2B773302987040900B12C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B773402987040900B12C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7734A2987040900B12C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2B7732A2987040900B12C4C = {
+			isa = PBXGroup;
+			children = (
+				C2B773352987040900B12C4C /* VeterinariaLasCondes */,
+				C2B773462987040900B12C4C /* VeterinariaLasCondesTests */,
+				C2B773502987040900B12C4C /* VeterinariaLasCondesUITests */,
+				C2B773342987040900B12C4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2B773342987040900B12C4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2B773332987040900B12C4C /* VeterinariaLasCondes.app */,
+				C2B773432987040900B12C4C /* VeterinariaLasCondesTests.xctest */,
+				C2B7734D2987040900B12C4C /* VeterinariaLasCondesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2B773352987040900B12C4C /* VeterinariaLasCondes */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE6BF02A2688CC00A28796 /* Shared */,
+				C2CE6BED2A26886800A28796 /* Perfil */,
+				C2CE6BEA2A26883300A28796 /* Login */,
+				C2CE6BE32A26809D00A28796 /* Service */,
+				C2B773362987040900B12C4C /* VeterinariaLasCondesApp.swift */,
+				C2B7733A2987040900B12C4C /* Assets.xcassets */,
+				C2B7733C2987040900B12C4C /* Preview Content */,
+			);
+			path = VeterinariaLasCondes;
+			sourceTree = "<group>";
+		};
+		C2B7733C2987040900B12C4C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C2B7733D2987040900B12C4C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2B773462987040900B12C4C /* VeterinariaLasCondesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2B773472987040900B12C4C /* VeterinariaLasCondesTests.swift */,
+			);
+			path = VeterinariaLasCondesTests;
+			sourceTree = "<group>";
+		};
+		C2B773502987040900B12C4C /* VeterinariaLasCondesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2B773512987040900B12C4C /* VeterinariaLasCondesUITests.swift */,
+				C2B773532987040900B12C4C /* VeterinariaLasCondesUITestsLaunchTests.swift */,
+			);
+			path = VeterinariaLasCondesUITests;
+			sourceTree = "<group>";
+		};
+		C2CE6BE32A26809D00A28796 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE6BE42A2680D400A28796 /* APIResponse.swift */,
+				C2CE6BE62A26811C00A28796 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C2CE6BEA2A26883300A28796 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE6BEC2A26885300A28796 /* View */,
+				C2CE6BEB2A26883E00A28796 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C2CE6BEB2A26883E00A28796 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE6BE82A26818F00A28796 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2CE6BEC2A26885300A28796 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2B773612987059900B12C4C /* Login.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2CE6BED2A26886800A28796 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE6BEE2A26886F00A28796 /* View */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		C2CE6BEE2A26886F00A28796 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2B77363298714C100B12C4C /* Perfil.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2CE6BF02A2688CC00A28796 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE6BF12A2688EA00A28796 /* ViewModelState.swift */,
+				C2CE6BF32A269B1500A28796 /* AuthException.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2B773322987040900B12C4C /* VeterinariaLasCondes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B773572987040900B12C4C /* Build configuration list for PBXNativeTarget "VeterinariaLasCondes" */;
+			buildPhases = (
+				C2B7732F2987040900B12C4C /* Sources */,
+				C2B773302987040900B12C4C /* Frameworks */,
+				C2B773312987040900B12C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeterinariaLasCondes;
+			productName = VeterinariaLasCondes;
+			productReference = C2B773332987040900B12C4C /* VeterinariaLasCondes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2B773422987040900B12C4C /* VeterinariaLasCondesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B7735A2987040900B12C4C /* Build configuration list for PBXNativeTarget "VeterinariaLasCondesTests" */;
+			buildPhases = (
+				C2B7733F2987040900B12C4C /* Sources */,
+				C2B773402987040900B12C4C /* Frameworks */,
+				C2B773412987040900B12C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2B773452987040900B12C4C /* PBXTargetDependency */,
+			);
+			name = VeterinariaLasCondesTests;
+			productName = VeterinariaLasCondesTests;
+			productReference = C2B773432987040900B12C4C /* VeterinariaLasCondesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2B7734C2987040900B12C4C /* VeterinariaLasCondesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B7735D2987040900B12C4C /* Build configuration list for PBXNativeTarget "VeterinariaLasCondesUITests" */;
+			buildPhases = (
+				C2B773492987040900B12C4C /* Sources */,
+				C2B7734A2987040900B12C4C /* Frameworks */,
+				C2B7734B2987040900B12C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2B7734F2987040900B12C4C /* PBXTargetDependency */,
+			);
+			name = VeterinariaLasCondesUITests;
+			productName = VeterinariaLasCondesUITests;
+			productReference = C2B7734D2987040900B12C4C /* VeterinariaLasCondesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2B7732B2987040900B12C4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C2B773322987040900B12C4C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C2B773422987040900B12C4C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C2B773322987040900B12C4C;
+					};
+					C2B7734C2987040900B12C4C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C2B773322987040900B12C4C;
+					};
+				};
+			};
+			buildConfigurationList = C2B7732E2987040900B12C4C /* Build configuration list for PBXProject "VeterinariaLasCondes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2B7732A2987040900B12C4C;
+			productRefGroup = C2B773342987040900B12C4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2B773322987040900B12C4C /* VeterinariaLasCondes */,
+				C2B773422987040900B12C4C /* VeterinariaLasCondesTests */,
+				C2B7734C2987040900B12C4C /* VeterinariaLasCondesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2B773312987040900B12C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B7733E2987040900B12C4C /* Preview Assets.xcassets in Resources */,
+				C2B7733B2987040900B12C4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B773412987040900B12C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7734B2987040900B12C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2B7732F2987040900B12C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B77364298714C100B12C4C /* Perfil.swift in Sources */,
+				C2B773622987059900B12C4C /* Login.swift in Sources */,
+				C2CE6BE52A2680D400A28796 /* APIResponse.swift in Sources */,
+				C2CE6BE72A26811C00A28796 /* APIService.swift in Sources */,
+				C2CE6BF22A2688EA00A28796 /* ViewModelState.swift in Sources */,
+				C2B773372987040900B12C4C /* VeterinariaLasCondesApp.swift in Sources */,
+				C2CE6BE92A26818F00A28796 /* LoginViewModel.swift in Sources */,
+				C2CE6BF42A269B1500A28796 /* AuthException.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7733F2987040900B12C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B773482987040900B12C4C /* VeterinariaLasCondesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B773492987040900B12C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B773542987040900B12C4C /* VeterinariaLasCondesUITestsLaunchTests.swift in Sources */,
+				C2B773522987040900B12C4C /* VeterinariaLasCondesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2B773452987040900B12C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B773322987040900B12C4C /* VeterinariaLasCondes */;
+			targetProxy = C2B773442987040900B12C4C /* PBXContainerItemProxy */;
+		};
+		C2B7734F2987040900B12C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B773322987040900B12C4C /* VeterinariaLasCondes */;
+			targetProxy = C2B7734E2987040900B12C4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C2B773552987040900B12C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2B773562987040900B12C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2B773582987040900B12C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VeterinariaLasCondes/Preview Content\"";
+				DEVELOPMENT_TEAM = 2BFYDDH2HY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngeeMazo.com.VeterinariaLasCondes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2B773592987040900B12C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VeterinariaLasCondes/Preview Content\"";
+				DEVELOPMENT_TEAM = 2BFYDDH2HY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngeeMazo.com.VeterinariaLasCondes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2B7735B2987040900B12C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BFYDDH2HY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngeeMazo.com.VeterinariaLasCondesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeterinariaLasCondes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VeterinariaLasCondes";
+			};
+			name = Debug;
+		};
+		C2B7735C2987040900B12C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BFYDDH2HY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngeeMazo.com.VeterinariaLasCondesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeterinariaLasCondes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VeterinariaLasCondes";
+			};
+			name = Release;
+		};
+		C2B7735E2987040900B12C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BFYDDH2HY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngeeMazo.com.VeterinariaLasCondesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeterinariaLasCondes;
+			};
+			name = Debug;
+		};
+		C2B7735F2987040900B12C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BFYDDH2HY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AngeeMazo.com.VeterinariaLasCondesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeterinariaLasCondes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2B7732E2987040900B12C4C /* Build configuration list for PBXProject "VeterinariaLasCondes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B773552987040900B12C4C /* Debug */,
+				C2B773562987040900B12C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B773572987040900B12C4C /* Build configuration list for PBXNativeTarget "VeterinariaLasCondes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B773582987040900B12C4C /* Debug */,
+				C2B773592987040900B12C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B7735A2987040900B12C4C /* Build configuration list for PBXNativeTarget "VeterinariaLasCondesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B7735B2987040900B12C4C /* Debug */,
+				C2B7735C2987040900B12C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B7735D2987040900B12C4C /* Build configuration list for PBXNativeTarget "VeterinariaLasCondesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B7735E2987040900B12C4C /* Debug */,
+				C2B7735F2987040900B12C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2B7732B2987040900B12C4C /* Project object */;
+}
