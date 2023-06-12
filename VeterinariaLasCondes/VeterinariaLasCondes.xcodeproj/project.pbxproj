@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C26E55432A3731420095B7A5 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26E55422A3731420095B7A5 /* Registro.swift */; };
 		C2B773372987040900B12C4C /* VeterinariaLasCondesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B773362987040900B12C4C /* VeterinariaLasCondesApp.swift */; };
 		C2B7733B2987040900B12C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B7733A2987040900B12C4C /* Assets.xcassets */; };
 		C2B7733E2987040900B12C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B7733D2987040900B12C4C /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C26E55422A3731420095B7A5 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
 		C2B773332987040900B12C4C /* VeterinariaLasCondes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeterinariaLasCondes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B773362987040900B12C4C /* VeterinariaLasCondesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinariaLasCondesApp.swift; sourceTree = "<group>"; };
 		C2B7733A2987040900B12C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C26E55412A3730D50095B7A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C26E55422A3731420095B7A5 /* Registro.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C2B7732A2987040900B12C4C = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		C2B773352987040900B12C4C /* VeterinariaLasCondes */ = {
 			isa = PBXGroup;
 			children = (
+				C26E55412A3730D50095B7A5 /* Model */,
 				C2CE6BF02A2688CC00A28796 /* Shared */,
 				C2CE6BED2A26886800A28796 /* Perfil */,
 				C2CE6BEA2A26883300A28796 /* Login */,
@@ -333,6 +344,7 @@
 			files = (
 				C2B77364298714C100B12C4C /* Perfil.swift in Sources */,
 				C2B773622987059900B12C4C /* Login.swift in Sources */,
+				C26E55432A3731420095B7A5 /* Registro.swift in Sources */,
 				C2CE6BE52A2680D400A28796 /* APIResponse.swift in Sources */,
 				C2CE6BE72A26811C00A28796 /* APIService.swift in Sources */,
 				C2CE6BF22A2688EA00A28796 /* ViewModelState.swift in Sources */,

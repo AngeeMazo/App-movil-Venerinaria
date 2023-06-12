@@ -3,4 +3,69 @@
    uuid = "7AECF81D-C4E3-4892-A397-FAF2303EFCA5"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A076326-1B63-460F-8B5B-8B29C845FC36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VeterinariaLasCondes/Login/ViewModel/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A076326-1B63-460F-8B5B-8B29C845FC36 - a782ede7966cc8d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;VeterinariaLasCondes.Registro&gt;, Swift.Error&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in VeterinariaLasCondes.LoginViewModel.login() -&gt; ()"
+                  moduleName = "VeterinariaLasCondes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaimeuribe/Documents/Angee/VeterinariaLasCondes/VeterinariaLasCondes/Login/ViewModel/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "1A076326-1B63-460F-8B5B-8B29C845FC36 - bd499a8a1130c1bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;VeterinariaLasCondes.Registro&gt;, Swift.Error&gt;) -&gt; () in VeterinariaLasCondes.LoginViewModel.login() -&gt; ()"
+                  moduleName = "VeterinariaLasCondes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaimeuribe/Documents/Angee/VeterinariaLasCondes/VeterinariaLasCondes/Login/ViewModel/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "1A076326-1B63-460F-8B5B-8B29C845FC36 - bd499a8a1130c1bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;VeterinariaLasCondes.Registro&gt;, Swift.Error&gt;) -&gt; () in VeterinariaLasCondes.LoginViewModel.login() -&gt; ()"
+                  moduleName = "VeterinariaLasCondes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaimeuribe/Documents/Angee/VeterinariaLasCondes/VeterinariaLasCondes/Login/ViewModel/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

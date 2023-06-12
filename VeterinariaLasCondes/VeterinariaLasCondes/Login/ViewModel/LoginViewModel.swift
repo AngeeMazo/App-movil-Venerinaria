@@ -16,8 +16,9 @@ class LoginViewModel: ObservableObject {
     @Published var state = ViewModelState.initial
     
     private let errorPassword: String = "Usuario o contraseña incorrecta"
-    private let urlLogin: URL = URL(string: "hht")!
+    private let urlLogin: URL = URL(string: "http://localhost:8080/Registro")!
     private let service: APIServiceInterface
+    var register: [Registro] = []
     
     init(service: APIServiceInterface) {
         self.service = service
@@ -26,20 +27,22 @@ class LoginViewModel: ObservableObject {
     func login() {
         state = .loading
         do {
-            try validateEmail(email: email)
-            service.fetchData(from: urlLogin, email: email, password: password) { [weak self] (result: Result<Bool, Error>) in
+            try self.validateEmail(email: self.email)
+            
+            self.service.fetchData(from: self.urlLogin, email: self.email, password: self.password){ [weak self] (result: Result<[Registro], Error>) in
                 switch result {
                 case .success(let data):
-                    self?.userDefault(successLogin: data)
+                    self?.register = data
+                    self?.userDefault(successLogin: true)
                     self?.state = .success
-                case .failure(_):
-                    self?.state = .failure(error: self?.errorPassword ?? "")
+                case .failure(let error):
+                    self?.state = .failure(error: self?.errorPassword ?? error.localizedDescription)
                 }
+                
             }
         } catch {
             self.state = .failure(error: error.localizedDescription)
         }
-        
     }
     
     func validateSession() {

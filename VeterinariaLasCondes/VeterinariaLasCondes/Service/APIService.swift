@@ -24,39 +24,43 @@ class APIService: APIServiceInterface {
                                  completion: @escaping (Result<T, Error>) -> Void) {
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
-            components.queryItems = [
-                URLQueryItem(name: "email", value: email),
-                URLQueryItem(name: "password", value: password)
-            ]
-            
-            guard let urlWithParams = components.url else {
-                completion(.failure(APIError.invalidURL))
-                return
-            }
+        components.queryItems = [
+            URLQueryItem(name: "mail", value: email),
+            URLQueryItem(name: "contrasena", value: password)
+        ]
+        
+        guard let urlWithParams = components.url else {
+            completion(.failure(APIError.invalidURL))
+            return
+        }
         
         URLSession.shared.dataTask(with: urlWithParams) { (data, response, error) in
-                if let error = error {
-                    completion(.failure(error))
-                    return
-                }
-                
-                guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-                    completion(.failure(APIError.requestFailed))
-                    return
-                }
-                
-                guard let data = data else {
-                    completion(.failure(APIError.invalidData))
-                    return
-                }
-                
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                completion(.failure(APIError.requestFailed))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(APIError.invalidData))
+                return
+            }
+            
+            DispatchQueue.main.sync {
                 do {
                     let decoder = JSONDecoder()
-                    let apiResponse = try decoder.decode(APIResponse<T>.self, from: data)
-                    completion(.success(apiResponse.data))
+                    let apiResponse = try decoder.decode(T.self, from: data)
+                    
+                    completion(.success(apiResponse))
                 } catch {
                     completion(.failure(error))
                 }
-            }.resume()
+            }
+            
+        }.resume()
     }
 }

@@ -54,7 +54,8 @@ struct Perfil: View {
                     
                     showDataView(title: "Especialista", data: "Especialista")
                     
-                    showDataView(title: "Nombre y Apellido", data: "Nombre y apellido")
+                    showDataView(title: "Nombre y Apellido",
+                                 data: "\(viewModel.register.first?.nombre ?? "") \(viewModel.register.first?.apellido ?? "")")
                     
                     showDataView(title: "Fecha", data: "Fecha")
                     

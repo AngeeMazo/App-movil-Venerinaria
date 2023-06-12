@@ -79,9 +79,7 @@ struct Login: View {
         }
         .background(Color("colorFondo").ignoresSafeArea(.all))
     }
-    
 }
-
 
 struct Login_Previews: PreviewProvider {
     private static let apiService: APIServiceInterface = APIService()
